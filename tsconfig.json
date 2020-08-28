@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "strict": true,
+    "noEmit": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "outDir": "./dist",
+    "strictPropertyInitialization": false,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": "./src",
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "@modules/*": [
+        "modules/*"
+      ],
+      "@config/*": [
+        "config/*"
+      ],
+      "@shared/*": [
+        "shared/*"
+      ]
+    },
+    "forceConsistentCasingInFileNames": true
+  }
+}
