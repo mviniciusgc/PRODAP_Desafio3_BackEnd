@@ -1,13 +1,40 @@
- Passo a Passo para execução do projeto.
+## Get started 
 
-1) Clone o projeto do gitHub em uma pasta em seu computador.
-2) Execute o comando "yarn" para instalar as dependências.
-3) Este projeto pode ser testado de duas formas utilizando os testes já criados ou utilizando um programa que faça requisições http como exemplo insomnia, postman etc.
-    a) Para executar os testes basta executar o comando "yarn test" os testes serão executados.
-    b) Para executar o projeto com um programa de requisições http execute o comando no terminal do visual studio code "yarn dev:server" para iniciar o servidor, segue abaixo as rotas disponíveis.
+To run this project in your machine, follow the steps below.
 
-    Rotas
+To clone and install all dependences, run the command below
 
-1)http://localhost:3333/ordenar
-    
-    a) Essa rota recebe como parâmetro um json com os seguintes campos "numeros" é uma Array<number>.
+~~~sh
+git clone https://github.com/mviniciusgc/PRODAP_Desafio3_BackEnd.git
+
+cd PRODAP_Desafio3_BackEnd
+
+yarn 
+ or
+npm run install
+~~~
+
+## Run tests
+
+~~~sh
+yarn test
+ or
+npm run test
+~~~
+
+## Exec server
+
+~~~sh
+yarn dev:server
+ or
+npm run dev:server
+~~~
+
+
+## Request
+
+Send this json in body of request, u can use insomnia or postman for this.
+
+~~~javascript
+{ "some": "json" }
+~~~

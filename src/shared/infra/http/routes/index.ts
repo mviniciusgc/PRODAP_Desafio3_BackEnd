@@ -1,9 +1,9 @@
 import { Router } from 'express';
-import { ordenacaoRouter } from '@modules/ordenacao/infra/http/routes/Ordenacao.route';
+import { ordinationRouter } from '@modules/ordination/infra/http/routes/Ordination.route';
 
 
 const routes = Router();
 
-routes.use('/ordenar', ordenacaoRouter);
+routes.use('/order', ordinationRouter);
 
 export { routes };

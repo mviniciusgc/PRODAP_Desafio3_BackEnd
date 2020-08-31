@@ -1,6 +1,6 @@
 import { container } from 'tsyringe';
 
-import { IOrdenacaoRepository } from '@modules/ordenacao/interfaces/repositories/IOrdenacaoRepository';
-import { OrdenacaoRepository } from '@modules/ordenacao/infra/repositories/OrdenacaoRepository';
+import { IOrdinationRepository } from '@modules/ordination/interfaces/repositories/IOrdinationRepository';
+import { OrdinationRepository } from '@modules/ordination/infra/repositories/OrdinationRepository';
 
-container.registerSingleton<IOrdenacaoRepository>('OrdenacaoRepository', OrdenacaoRepository);
+container.registerSingleton<IOrdinationRepository>('OrdinationRepository', OrdinationRepository);
