@@ -21,7 +21,7 @@
     "tsyringe": "^4.3.0"
   },
   "scripts": {
-    "tsc": "tsc",
+    "build": "tsc",
     "dev:server": "tsnd -r tsconfig-paths/register --transpile-only --respawn --ignore-watch node_modules src/shared/infra/http/server.ts tsc",
     "test": "jest"
   }

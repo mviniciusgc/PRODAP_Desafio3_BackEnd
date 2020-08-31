@@ -12,7 +12,7 @@ class OrdinationService {
 
     public async execute(data: Array<number>): Promise<Array<number>> {
 
-        
+
         const containsNegatives = await this.negativeNumbers(data);
 
         if (containsNegatives) {
@@ -27,13 +27,13 @@ class OrdinationService {
         return numbers;
     }
 
-    private async negativeNumbers(data: number[]): Promise<boolean> {
+    private negativeNumbers(data: number[]): boolean {
         const negative = data.some(element => Math.sign(element) != 1);
         return negative;
     }
 
 
-    private async getIncreasingOrderedPairs(data: number[]): Promise<number[]> {
+    private getIncreasingOrderedPairs(data: number[]): number[] {
 
         let newArrayNumber: Array<number>;
         newArrayNumber = [];
@@ -48,7 +48,7 @@ class OrdinationService {
     }
 
 
-    private async geOddSortedDescending(data: number[]): Promise<number[]> {
+    private geOddSortedDescending(data: number[]): number[] {
 
         let newArrayNumber: Array<number>;
         newArrayNumber = [];
