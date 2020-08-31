@@ -4,7 +4,7 @@ import { OrdinationService } from '@modules/ordination/services/OrdinationServic
 import { AppError } from '@shared/error/appError';
 
 
-describe('Ordenar números', () => {
+describe('Sort numbers', () => {
     let fakeOrdinationRepository: OrdinationRepository;
     let ordinationService: OrdinationService;
 
